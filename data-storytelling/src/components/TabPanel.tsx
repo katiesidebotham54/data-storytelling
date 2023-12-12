@@ -12,10 +12,11 @@ interface TabPanelProps {
   dir?: string;
   index: number;
   value: number;
+  userType?: string;
 }
 
 export default function TabPanel(props: TabPanelProps) {
-  const { children, value, index, ...other } = props;
+  const { userType, children, value, index, ...other } = props;
 
   return (
     <div
